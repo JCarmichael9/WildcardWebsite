@@ -1,0 +1,36 @@
+
+  #openWebsiteBtn {
+    display: none;
+    margin-top: 20px;
+}
+
+#bar {
+    width: 100%; 
+    background-color: rgb(255, 255, 255);
+}
+
+#myBar {
+    width: 0%; 
+    height: 30px; 
+    background-color: rgb(17, 0, 255);
+}
+
+.big {
+    width: 100vw;
+    height: 100vh;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  #content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 50px;
+  }
