@@ -13,8 +13,3 @@ let width = 0;
             }
         }
 //end of loading bar//
-
-function freezeVideo() {
-    const video = document.getElementById('background-video');
-    video.pause(); // stop the video
-    video.currentTime = video.duration;}
