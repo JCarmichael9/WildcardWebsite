@@ -73,9 +73,9 @@ function checkAnswers() {
     let answer4 = document.querySelector('input[name="q4"]:checked');
     
     if (answer1 && answer1.value === "b") score++;
-    if (answer2 && answer2.value === "a") score++;
-    if (answer3 && answer3.value === "a") score++;
-    if (answer4 && answer4.value === "a") score++;
+    if (answer2 && answer2.value === "c") score++;
+    if (answer3 && answer3.value === "b") score++;
+    if (answer4 && answer4.value === "c") score++;
     
     document.getElementById("result").innerText = `You scored ${score}/4!`;
 }
