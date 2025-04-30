@@ -1,3 +1,13 @@
+@font-face {
+  font-family: mario; /* Name of the font */
+  src: url("SuperMario256.ttf"); /* Path to the font file */
+}
+
+.quotesy {
+  font-family: 'mario';
+}
+
+
 #openWebsiteBtn {
   display: none;
   margin-top: 20px;
