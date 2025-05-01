@@ -8,10 +8,7 @@
 }
 
 
-#openWebsiteBtn {
-  display: none;
-  margin-top: 20px;
-}
+
 
 #bar {
   width: 100%;
@@ -29,13 +26,14 @@
   height: 100vh;
 }
 
-#background-video {
+
+#myVideo {
   position: fixed;
-  top: 0;
-  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
 }
 
 #content {
@@ -49,7 +47,8 @@
   width: 20px;
   position: absolute;
   left: 100px;
-  bottom: 10px;
+  bottom: 100px;
+  z-index: 2;
 }
 
 .infoPages {
