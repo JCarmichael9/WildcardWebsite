@@ -6,7 +6,7 @@ let width = 0;
         function fillBar() {
             if (width >= 100) {
                 clearInterval(loading);
-                document.getElementById("openWebsiteBtn").style.display = "block"; // show button
+                document.getElementById('openWebsiteBtn').classList.remove('d-none')
             } else {
                 width++;
                 bar.style.width = width + '%';

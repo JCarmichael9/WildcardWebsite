@@ -18,23 +18,20 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <!-- cant get the audio to work yet ill do it later-->
-        <audio autoplay hidden id="homeAudio">
-            <source src="homepagemudic.mp3" type="audio/mpeg">
-        </audio>
-
-        <!-- Background video -->
-        <video autoplay muted id="myVideo">
-            <source src="imgs/mario.mp4" type="video/mp4">
-        </video>
-
-        <!-- Button wrapper -->
-        <div class="chars">
-            <button class='btn' id="openWebsiteBtn" onclick="location.href='mario.html'">
-                <img src="imgs/luigi.png" class="img-fluid" />
-            </button>
+        <div class="video-wrapper">
+            <video autoplay muted id="myVideo">
+                <source src="imgs/mario.mp4" type="video/mp4">
+            </video>
+    
+            <!-- Button wrapper INSIDE this relative div -->
+            <div class="chars">
+                <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                    <img src="imgs/luigi.png" class="img-fluid" />
+                </button>
+            </div>
         </div>
     </main>
+    
     <footer>
         <!-- place footer here -->
     </footer>
