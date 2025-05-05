@@ -79,3 +79,20 @@ function checkAnswers() {
     
     document.getElementById("result").innerText = `You scored ${score}/4!`;
 }
+
+//experiment//
+
+function showSmashFlash() {
+    const flash = document.createElement('div');
+    flash.classList.add('flash-overlay');
+    document.body.appendChild(flash);
+    setTimeout(() => {
+      flash.remove();
+    }, 500); // remove after animation
+  }
+
+  // Example: call this before revealing Mario
+  setTimeout(() => {
+    showSmashFlash();
+    document.querySelector('.mario').style.opacity = '1';
+  }, 30500); // matches 30.5s

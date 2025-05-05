@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="overflow-hidden">
+<body class="overflow-hidden quotesy">
     <header>
         <!-- place navbar here -->
     </header>
@@ -22,7 +22,7 @@
             <video autoplay muted id="myVideo">
                 <source src="imgs/mario.mp4" type="video/mp4">
             </video>
-            
+
             <!-- Apple for large screens (above the bush) -->
             <button class="btn apple d-none d-xl-block" id="openWebsiteBtn" onclick="location.href='mario.html'">
                 <img src="imgs/apple.png" class="img-fluid apple-large" alt="apple">
@@ -35,35 +35,35 @@
                 <div class="row w-100">
                     <!-- Luigi Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                        <button class="btn" id="openWebsiteBtn" onclick="location.href='luigi.html'">
                             <img src="imgs/luigi.png" class="img-fluid" alt="Luigi for mobile">
                         </button>
                     </div>
-            
+
                     <!-- Mario Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
                         <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
                             <img src="imgs/mario.png" class="img-fluid" alt="Mario for mobile">
                         </button>
                     </div>
-            
+
                     <!-- Peach Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                        <button class="btn" id="openWebsiteBtn" onclick="location.href='peach.html'">
                             <img src="imgs/peach.png" class="img-fluid" alt="Peach for mobile">
                         </button>
                     </div>
-            
+
                     <!-- Yoshi Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                        <button class="btn" id="openWebsiteBtn" onclick="location.href='yoshi.html'">
                             <img src="imgs/yoshi.png" class="img-fluid" alt="Yoshi for mobile">
                         </button>
                     </div>
 
                     <!-- Apple Image for small screens (inside the grid) -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                        <button class="btn" id="openWebsiteBtn" onclick="location.href='quiz.html'">
                             <img src="imgs/apple.png" class="img-fluid" alt="Apple for mobile">
                         </button>
                     </div>
@@ -74,38 +74,48 @@
         <!-- Show this ONLY on large screens (xl and above) -->
         <div class="d-none d-xl-block">
             <!-- Luigi Image for large screens -->
-            <div class="mb-3 luigi">
-                <button class="btn" id="openWebsiteBtn" onclick="location.href='luigi.html'">
-                    <img src="imgs/bigluigi.png" class="img-fluid d-none d-xl-block" alt="Luigi for desktop">
-                </button>
+
+            <div id="flashContainer">
+                <div class="mb-3 luigi">
+                    <button class="btn" id="openWebsiteBtn" onclick="location.href='luigi.html'">
+                        <img src="imgs/bigluigi.png" class="img-fluid d-none d-xl-block" alt="Luigi for desktop">
+                    </button>
+                </div>
             </div>
 
             <!-- Mario Image for large screens -->
-            <div class="mb-3 mario">
-                <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
-                    <img src="imgs/bigmario.png" class="img-fluid d-none d-xl-block" alt="Mario for desktop">
-                </button>
+            <div id="flashContainer">
+                <div class="mb-3 mario">
+                    <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                        <img src="imgs/bigmario.png" class="img-fluid d-none d-xl-block" alt="Mario for desktop">
+                    </button>
+                </div>
             </div>
-
             <!-- Peach Image for large screens -->
-            <div class="mb-3 peach">
-                <button class="btn" id="openWebsiteBtn" onclick="location.href='peach.html'">
-                    <img src="imgs/bigpeach.png" class="img-fluid d-none d-xl-block" alt="Peach for desktop">
-                </button>
+            <div id="flashContainer">
+                <div class="mb-3 peach">
+                    <button class="btn" id="openWebsiteBtn" onclick="location.href='peach.html'">
+                        <img src="imgs/bigpeach.png" class="img-fluid d-none d-xl-block" alt="Peach for desktop">
+                    </button>
+                </div>
             </div>
 
             <!-- Yoshi Image for large screens -->
-            <div class="mb-3 yoshi">
-                <button class="btn" id="openWebsiteBtn" onclick="location.href='yoshi.html'">
-                    <img src="imgs/bigyoshi.png" class="img-fluid d-none d-xl-block" alt="Yoshi for desktop">
-                </button>
+            <div id="flashContainer">
+                <div class="mb-3 yoshi">
+                    <button class="btn" id="openWebsiteBtn" onclick="location.href='yoshi.html'">
+                        <img src="imgs/bigyoshi.png" class="img-fluid d-none d-xl-block" alt="Yoshi for desktop">
+                    </button>
+                </div>
             </div>
 
             <!-- Apple Image for large screens -->
-            <div class="mb-3 apple">
-                <button class="btn" id="openWebsiteBtn" onclick="location.href='quiz.html'">
-                    <img src="imgs/apple.png" class="img-fluid d-none d-xl-block" alt="Apple for desktop">
-                </button>
+            <div id="flashContainer">
+                <div class="mb-3 apple">
+                    <button class="btn" id="openWebsiteBtn" onclick="location.href='quiz.html'">
+                        <img src="imgs/apple.png" class="img-fluid d-none d-xl-block" alt="Apple for desktop">
+                    </button>
+                </div>
             </div>
         </div>
     </main>
