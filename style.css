@@ -46,6 +46,14 @@
   height: 100vh;
 }
 
+.apple img {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 10;
+  height: 10px;
+}
 #myVideo {
   position: fixed;
   bottom: 0;
