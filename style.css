@@ -1,16 +1,11 @@
 @font-face {
   font-family: mario;
-  /* Name of the font */
   src: url("SuperMario256.ttf");
-  /* Path to the font file */
 }
 
 .quotesy {
   font-family: 'mario';
 }
-
-
-
 
 #bar {
   width: 100%;
@@ -28,13 +23,11 @@
   height: 100vh;
 }
 
-
 #content {
   position: relative;
   text-align: center;
   padding-top: 50px;
 }
-
 
 .infoPages {
   background-color: lightskyblue;
@@ -48,14 +41,14 @@
 
 .apple img {
   position: absolute;
-  top: 86%;
-  left: 50.5%;
+  bottom: 9%;
+  left: 48.7%;
   transform: translate(-40%, -50%);
   z-index: 10;
   height: 90px;
-  animation: appear 0.00001s forwards;
   opacity: 0;
-  animation-delay: 34s;
+  animation: popIn 0.6s ease-out forwards;
+  animation-delay: 30s;
 }
 
 #myVideo {
@@ -69,19 +62,18 @@
   object-fit: cover;
 }
 
-
 .luigi {
   position: absolute;
   right: 10%;
   bottom: 10px;
   z-index: 2;
+  opacity: 0;
+  animation: popIn 0.6s ease-out forwards;
+  animation-delay: 29s;
 }
 
 .luigi img {
   height: 300px;
-  animation: appear 0.00001s forwards;
-  opacity: 0;
-  animation-delay: 33s;
 }
 
 .mario {
@@ -89,28 +81,29 @@
   left: 25%;
   bottom: 10px;
   z-index: 2;
-  animation: appear 0.00001s forwards;
   opacity: 0;
-  animation-delay: 31s;
+  animation: popIn 0.6s ease-out forwards;
+  animation-delay: 27s;
 }
 
 .mario img {
   height: 300px;
 }
 
-
 .peach {
   position: absolute;
   right: 25%;
   bottom: 10px;
   z-index: 2;
-  animation: appear 0.00001s forwards;
   opacity: 0;
-  animation-delay: 32s;
+  animation: popIn 0.6s ease-out forwards;
+  animation-delay: 28s;
 }
 
 .peach img {
   height: 300px;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .yoshi {
@@ -118,29 +111,31 @@
   left: 7%;
   bottom: 10px;
   z-index: 2;
-  animation: appear 0.00001s forwards;
   opacity: 0;
-  animation-delay: 30s;
-  
+  animation: popIn 0.6s ease-out forwards;
+  animation-delay: 26s;
 }
 
 .yoshi img {
   height: 300px;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-
-@keyframes appear {
-  from {
-      opacity: 0;
-  } to {
-      opacity: 1;
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
-
-
-
-
-
 
 .sky-bg {
   position: fixed;
@@ -157,64 +152,3 @@
   height: 150px;
 }
 
-button:focus,
-button:active,
-button img:focus,
-button img:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-button, button img {
-  -webkit-tap-highlight-color: transparent;
-}
-
-
-
-
-/* experiment */
-@keyframes smashFlash {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-    background-color: white;
-  }
-  20% {
-    opacity: 0;
-    background-color: transparent;
-  }
-  100% {
-    opacity: 0;
-    background-color: transparent;
-  }
-}
-
-.flash-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9;
-  background-color: white;
-  opacity: 0;
-  animation: smashFlash 0.5s ease-out forwards;
-}
-@keyframes popIn {
-  0% {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.mario img {
-  animation: popIn 0.6s ease-out 30.5s forwards;
-}

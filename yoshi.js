@@ -46,3 +46,5 @@ function generateYoshiQuote3() {
 window.onload = generateYoshiQuote1(), generateYoshiQuote2(), generateYoshiQuote3();
 //end of yoshi quotes
 
+
+
