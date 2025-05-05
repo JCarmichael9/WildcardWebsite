@@ -9,13 +9,13 @@
 
 #bar {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: lightskyblue;
 }
 
 #myBar {
   width: 0%;
   height: 30px;
-  background-color: rgb(17, 0, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .big {
@@ -152,3 +152,17 @@
   height: 150px;
 }
 
+.idek {
+  color: lightskyblue;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightskyblue;
+  object-fit: cover;
+  z-index: 0;
+}
