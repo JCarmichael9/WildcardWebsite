@@ -1,3 +1,24 @@
+setTimeout(() => {
+    document.getElementById('l').classList.add('popIn')
+}, 29500)
+
+setTimeout(() => {
+    document.getElementById('m').classList.add('popIn')
+}, 27500)
+
+setTimeout(() => {
+    document.getElementById('p').classList.add('popIn')
+}, 28500)
+
+setTimeout(() => {
+    document.getElementById('y').classList.add('popIn')
+}, 26500)
+
+setTimeout(() => {
+    document.getElementById('a').classList.add('popIn')
+}, 30500)
+
+
 //found this loading bar//
 let width = 0;
         let bar = document.getElementById("myBar");
@@ -82,17 +103,4 @@ function checkAnswers() {
 
 //experiment//
 
-function showSmashFlash() {
-    const flash = document.createElement('div');
-    flash.classList.add('flash-overlay');
-    document.body.appendChild(flash);
-    setTimeout(() => {
-      flash.remove();
-    }, 500); // remove after animation
-  }
 
-  // Example: call this before revealing Mario
-  setTimeout(() => {
-    showSmashFlash();
-    document.querySelector('.mario').style.opacity = '1';
-  }, 30500); // matches 30.5s

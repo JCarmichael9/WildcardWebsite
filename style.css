@@ -39,16 +39,17 @@
   height: 100vh;
 }
 
-.apple img {
+.apple {
   position: absolute;
-  bottom: 9%;
-  left: 48.7%;
-  transform: translate(-40%, -50%);
+  bottom: 7%;
+  left: 48%;
   z-index: 10;
-  height: 90px;
   opacity: 0;
-  animation: popIn 0.6s ease-out forwards;
-  animation-delay: 30s;
+}
+
+.apple img {
+
+  height: 90px;
 }
 
 #myVideo {
@@ -68,8 +69,6 @@
   bottom: 10px;
   z-index: 2;
   opacity: 0;
-  animation: popIn 0.6s ease-out forwards;
-  animation-delay: 29s;
 }
 
 .luigi img {
@@ -82,8 +81,6 @@
   bottom: 10px;
   z-index: 2;
   opacity: 0;
-  animation: popIn 0.6s ease-out forwards;
-  animation-delay: 27s;
 }
 
 .mario img {
@@ -96,8 +93,6 @@
   bottom: 10px;
   z-index: 2;
   opacity: 0;
-  animation: popIn 0.6s ease-out forwards;
-  animation-delay: 28s;
 }
 
 .peach img {
@@ -112,14 +107,16 @@
   bottom: 10px;
   z-index: 2;
   opacity: 0;
-  animation: popIn 0.6s ease-out forwards;
-  animation-delay: 26s;
 }
 
 .yoshi img {
   height: 300px;
   outline: none !important;
   box-shadow: none !important;
+}
+
+.popIn {
+  animation: popIn 0.6s ease-out forwards;
 }
 
 @keyframes popIn {
@@ -163,6 +160,23 @@
   width: 100vw;
   height: 100vh;
   background-color: lightskyblue;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.nob {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.lebron {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(110, 200, 255);
   object-fit: cover;
   z-index: 0;
 }

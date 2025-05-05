@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="overflow-hidden quotesy">
+<body class="overflow-hidden quotesy lebron">
     <header>
         <!-- place navbar here -->
     </header>
@@ -27,9 +27,7 @@
             </audio>
 
             <!-- Apple for large screens (above the bush) -->
-            <button class="btn apple d-none d-xl-block" id="openWebsiteBtn" onclick="location.href='mario.html'">
-                <img src="imgs/apple.png" class="img-fluid apple-large" alt="apple">
-            </button>
+
         </div>
 
         <!-- Show this ONLY on small to medium screens (up to xl) -->
@@ -38,35 +36,35 @@
                 <div class="row w-100">
                     <!-- Luigi Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='luigi.html'">
+                        <button class="btn nob" id="openWebsiteBtn" onclick="location.href='luigi.html'">
                             <img src="imgs/luigi.png" class="img-fluid" alt="Luigi for mobile">
                         </button>
                     </div>
 
                     <!-- Mario Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                        <button class="btn nob" id="openWebsiteBtn" onclick="location.href='mario.html'">
                             <img src="imgs/mario.png" class="img-fluid" alt="Mario for mobile">
                         </button>
                     </div>
 
                     <!-- Peach Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='peach.html'">
+                        <button class="btn nob" id="openWebsiteBtn" onclick="location.href='peach.html'">
                             <img src="imgs/peach.png" class="img-fluid" alt="Peach for mobile">
                         </button>
                     </div>
 
                     <!-- Yoshi Image for small screens -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='yoshi.html'">
+                        <button class="btn nob" id="openWebsiteBtn" onclick="location.href='yoshi.html'">
                             <img src="imgs/yoshi.png" class="img-fluid" alt="Yoshi for mobile">
                         </button>
                     </div>
 
                     <!-- Apple Image for small screens (inside the grid) -->
                     <div class="col-12 mb-3 text-center tiny">
-                        <button class="btn" id="openWebsiteBtn" onclick="location.href='quiz.html'">
+                        <button class="btn nob" id="openWebsiteBtn" onclick="location.href='quiz.html'">
                             <img src="imgs/apple.png" class="img-fluid" alt="Apple for mobile">
                         </button>
                     </div>
@@ -79,8 +77,8 @@
             <!-- Luigi Image for large screens -->
 
             <div id="flashContainer">
-                <div class="mb-3 luigi">
-                    <button class="btn" id="openWebsiteBtn" onclick="location.href='luigi.html'">
+                <div class="mb-3 luigi" id="l">
+                    <button class="btn nob" id="openWebsiteBtn" onclick="location.href='luigi.html'">
                         <img src="imgs/bigluigi.png" class="img-fluid d-none d-xl-block" alt="Luigi for desktop">
                     </button>
                 </div>
@@ -88,16 +86,16 @@
 
             <!-- Mario Image for large screens -->
             <div id="flashContainer">
-                <div class="mb-3 mario">
-                    <button class="btn" id="openWebsiteBtn" onclick="location.href='mario.html'">
+                <div class="mb-3 mario" id="m">
+                    <button class="btn nob" id="openWebsiteBtn" onclick="location.href='mario.html'">
                         <img src="imgs/bigmario.png" class="img-fluid d-none d-xl-block" alt="Mario for desktop">
                     </button>
                 </div>
             </div>
             <!-- Peach Image for large screens -->
             <div id="flashContainer">
-                <div class="mb-3 peach">
-                    <button class="btn" id="openWebsiteBtn" onclick="location.href='peach.html'">
+                <div class="mb-3 peach" id="p">
+                    <button class="btn nob" id="openWebsiteBtn" onclick="location.href='peach.html'">
                         <img src="imgs/bigpeach.png" class="img-fluid d-none d-xl-block" alt="Peach for desktop">
                     </button>
                 </div>
@@ -105,8 +103,8 @@
 
             <!-- Yoshi Image for large screens -->
             <div id="flashContainer">
-                <div class="mb-3 yoshi">
-                    <button class="btn" id="openWebsiteBtn" onclick="location.href='yoshi.html'">
+                <div class="mb-3 yoshi" id="y">
+                    <button class="btn nob" id="openWebsiteBtn" onclick="location.href='yoshi.html'">
                         <img src="imgs/bigyoshi.png" class="img-fluid d-none d-xl-block" alt="Yoshi for desktop">
                     </button>
                 </div>
@@ -114,8 +112,8 @@
 
             <!-- Apple Image for large screens -->
             <div id="flashContainer">
-                <div class="mb-3 apple">
-                    <button class="btn" id="openWebsiteBtn" onclick="location.href='quiz.html'">
+                <div class="mb-3 apple" id="a">
+                    <button class="btn nob" id="openWebsiteBtn" onclick="location.href='quiz.html'">
                         <img src="imgs/apple.png" class="img-fluid d-none d-xl-block" alt="Apple for desktop">
                     </button>
                 </div>
@@ -127,11 +125,14 @@
         <!-- place footer here -->
     </footer>
 
+    <script src="script.js"></script>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         crossorigin="anonymous"></script>
+        
 </body>
 
 </html>
